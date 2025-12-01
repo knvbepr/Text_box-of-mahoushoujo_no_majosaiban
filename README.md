@@ -2,35 +2,10 @@
 
 一个基于Python的自动化表情包生成工具，能够快速生成带有自定义文本的魔法少女的魔女裁判文本框图片。[灵感来源与代码参考](https://github.com/MarkCup-Official/Anan-s-Sketchbook-Chat-Box)
 
+【**注意:** `main`分支当前处于不可用状态，请在下方[选择分支](#分支指引)】
+
 ## 预览
-<img width="1200" height="390" alt="5f10f4239bc8a82812e505fd0c4f5567" src="https://github.com/user-attachments/assets/6fb46a8d-4fc4-4d10-80a0-ed21fbb428bf" />
-
-<img width="1200" height="390" alt="96038673678af657e937d20617322e81" src="https://github.com/user-attachments/assets/847c331e-9274-4b60-9b42-af0a80265391" />
-
-
-一个基于Python的自动化表情包生成工具，能够快速生成带有自定义文本的魔法少女的魔女裁判文本框图片。[灵感来源与代码参考](https://github.com/MarkCup-Official/Anan-s-Sketchbook-Chat-Box)
-
-<div align="left">
-
-## 修改说明
-
-1.修复了原版生成函数阻塞快捷键识别的bug
-
-2.添加了窗口白名单功能，避免在不需要使用脚本的窗口触发快捷键
-
-3.修复了输出图片时角色名丢失的bug
-
-4.支持系统通用的emoji（TIM由于会自动将输入的emoji变成图片，故暂不支持，QQ未测试）
-
-5.增加了方便的build脚本，生成方式：pyinstaller build_onefile.spec 不知道为啥没办法包含pilemoji库，导致无法生成emoji，建议还是运行py文件
-
-## 功能特色
-
-- 🎨 多角色支持 - 内置14个角色，每个角色多个表情差分，支持自定义角色导入
-- ⚡ 终端用户界面 - 使用Textual实现美观的用户界面
-- 🖼️ 智能合成 - 自动合成背景与角色图片
-- 📝 文本嵌入 - 自动在表情图片上添加文本
-- 🎯 随机算法 - 智能避免重复表情
+<img width="600" height="195" alt="5f10f4239bc8a82812e505fd0c4f5567" src="https://github.com/user-attachments/assets/6fb46a8d-4fc4-4d10-80a0-ed21fbb428bf" /><img width="600" height="195" alt="96038673678af657e937d20617322e81" src="https://github.com/user-attachments/assets/847c331e-9274-4b60-9b42-af0a80265391" />
 
 ## 分支指引
 由于本项目正在蒸蒸日上（喜，有很多老师都为本项目提交了自己的贡献，但全都挤进main分支有点百家争鸣了（悲
@@ -39,13 +14,15 @@
 
 1. **主分支** 👈您在这里
 
-2. **tkinter GUI** (现在还没合并但未来可期)
+2. **[古早版本](https://github.com/oplivilqo/manosaba_text_box/tree/legacy)**: `legacy`分支
+   - 纯命令行界面，监听全局快捷键的古早版本，「但是没bug」。
+3. **tkinter GUI** (现在还没合并但未来可期)
    - 简单易用的用户界面，同时带有预览。适合大多数用户。
    - 目前有三位老师正在爆肝，请见PR [#32](https://github.com/oplivilqo/manosaba_text_box/pull/32), [#23](https://github.com/oplivilqo/manosaba_text_box/pull/23), [#41](https://github.com/oplivilqo/manosaba_text_box/pull/41)
-3. **[textual TUI](https://github.com/oplivilqo/manosaba_text_box/tree/refresh)**: `refresh`分支(比较新) 或 _`main`分支(当前分支)_
+4. **[textual TUI](https://github.com/oplivilqo/manosaba_text_box/tree/refresh)**: `refresh`分支(比较新) 或 _`main`分支(当前分支)_
    - 直接在运行终端展示的用户界面，适合少数喜欢终端UI的用户。但暂时无法实现图片预览。
    ![TUI界面截图](https://github.com/user-attachments/assets/5d1219c4-582f-4573-a605-065d6abc5337)
-4. **[JavaScript WebUI](https://github.com/oplivilqo/manosaba_text_box/tree/lite)**: `lite`分支
+5. **[JavaScript WebUI](https://github.com/oplivilqo/manosaba_text_box/tree/lite)**: `lite`分支
    - 无需Python环境，使用浏览器实现的版本。适合偶尔生成图片的用户。
    ![JS版界面截图](https://github.com/user-attachments/assets/38d0e142-8707-4f43-b1a8-1bb0bcdbe848)
 
@@ -126,6 +103,7 @@ warden:
 <div align="right">
   
 ### 以上. 柊回文————2025.11.15
+
 
 
 
